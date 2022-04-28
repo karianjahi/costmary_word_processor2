@@ -4,6 +4,8 @@ for counting words
 """
 
 from bs4 import BeautifulSoup
+
+
 class WordCounter:
     """
     This is the class that does the job
@@ -44,11 +46,7 @@ class WordCounter:
             self.sentence = " ".join(text_list)
 
 
-
-
-
 if __name__ == "__main__":
     sentence = "<p> I am studying at spiced </p>"
-    #sentence = "no html"
     word_instance = WordCounter(sentence=sentence)
-    print(word_instance.extract_text_from_possible_html())
+    print(word_instance.count_words())

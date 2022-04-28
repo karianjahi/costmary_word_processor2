@@ -54,3 +54,13 @@ class TestWordCounter:
         """
         text = '<p class="spiced"> I want to drink coffee </p>'
         assert WordCounter(text).count_words() == 5
+
+    def test_wrong_instance_type(self):
+        """
+        Testing the wrong instance type
+        :return: None
+        """
+        text = ["my name is so and so"]
+        with pytest.raises(Exception) as error:
+            WordCounter(text).count_words()
+        assert "input must be string" in str(error.value)
