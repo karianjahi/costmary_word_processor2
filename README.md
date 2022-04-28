@@ -9,6 +9,7 @@ Steps:
     use `touch` to create files in terminal.
 
 Adding a badge for passing/failing tests
+
 ![Python application](https://github.com/karianjahi/costmary_word_processor/workflows/Python%20application/badge.svg)
 
 
