@@ -47,6 +47,6 @@ class WordCounter:
 
 
 if __name__ == "__main__":
-    text = "<p> I am studying at spiced </p>"
-    word_instance = WordCounter(sentence=text)
+    TEXT = "<p> I am studying at spiced </p>"
+    word_instance = WordCounter(sentence=TEXT)
     print(word_instance.count_words())
